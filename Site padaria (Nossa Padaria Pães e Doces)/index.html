@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Padaria Pães e Doces</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Nossa Padaria Pães e Doces</h1>
+            <p>O melhor pão e doces fresquinhos, feitos com amor!</p>
+        </div>
+    </header>
+        <div class="imagem-topo">
+            <img src="img/padaria-topo.jpg" alt="Imagem da padaria" />
+        </div>
+    <section id="status-pao" class="content-section">
+        <div class="container">
+            <h2>Status do Pão</h2>
+            <p id="pao-status">Pão disponível: <span id="disponibilidade-pao">Sim</span></p>
+            <p id="proxima-fornada">Próxima fornada em: <span id="horario-fornada">Não definido</span></p>
+        </div>
+    </section>
+
+    <section class="imagem-meio">
+        <img src="img/padaria-meio.jpg" alt="Produtos da padaria"/>
+    </section>
+
+    <footer class="footer">
+        <p>Área do Funcionário</p>
+        <div class="controls">
+            <input type="password" id="senha-funcionario" placeholder="Senha de funcionário">
+            <input type="number" id="minutos-fornada" placeholder="Minutos para próxima fornada">
+            <button id="definir-fornada" onclick="validarSenha('fornada')">Definir próxima fornada</button>
+            <button id="mudar-status" onclick="validarSenha('status')">Mudar status do pão</button>
+        </div>
+        <p>&copy; 2024 Nossa Padaria Pães e Doces. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

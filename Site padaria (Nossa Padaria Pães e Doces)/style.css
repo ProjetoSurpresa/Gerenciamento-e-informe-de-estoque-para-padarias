@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fefae0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #f4a261;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2.5em;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.imagem-topo img, .imagem-meio img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-meio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+.content-section {
+    padding: 40px 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #264653;
+}
+
+#pao-status, #proxima-fornada {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+span {
+    font-weight: bold;
+    color: #e76f51;
+}
+
+.footer {
+    background-color: #264653;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.controls input, .controls button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #f4a261;
+    font-size: 1em;
+    width: 100%;
+}
+
+.controls input[type="password"], .controls input[type="number"] {
+    background-color: #fff8dc;
+}
+
+.controls button {
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #264653;
+}
